@@ -4,7 +4,7 @@ set -o pipefail &&
   xcodebuild \
     -scheme "SimpleNotesUITests" \
     -sdk iphonesimulator \
-    -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' \
+    -destination 'platform=iOS Simulator,name=iPhone 6' \
     test \
   | bundle exec xcpretty \
     --color
