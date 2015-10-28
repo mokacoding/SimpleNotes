@@ -4,5 +4,6 @@ machine:
 
 test:
   override:
+    - instruments -s devices
     - ./unit-tests
     - ./ui-tests
