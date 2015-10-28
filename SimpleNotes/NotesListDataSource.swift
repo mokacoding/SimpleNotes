@@ -12,7 +12,9 @@ struct NotesDataSource {
   private let notes: [Note]
 
   init(notes: [Note]) {
-    self.notes = notes
+    self.notes = notes.sort { note, otherNote in
+      return note.lastUpdated.compare(otherNote.lastUpdated) == .OrderedDescending
+    }
   }
 
   func numberOfNotes() -> Int {
