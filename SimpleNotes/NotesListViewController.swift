@@ -76,4 +76,12 @@ class NotesListViewController: UITableViewController {
 
     return cell
   }
+
+  // MARK: UITableViewDelegate
+
+  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let note = dataSource.noteAtIndexPath(indexPath)
+    let boxedNote = Box(value: note)
+    performSegueWithIdentifier(showNoteSegueIdentifier, sender: boxedNote)
+  }
 }
