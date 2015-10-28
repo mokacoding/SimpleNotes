@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F473D281BE0DC3B00572B19 /* NotesDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F473D271BE0DC3B00572B19 /* NotesDataSourceTest.swift */; };
+		3F473D2A1BE0E16400572B19 /* ShowsNotesDetailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F473D291BE0E16400572B19 /* ShowsNotesDetailsTest.swift */; };
 		3F579DCF1BE0B9D50059B342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F579DCE1BE0B9D50059B342 /* AppDelegate.swift */; };
 		3F579DD41BE0B9D50059B342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F579DD21BE0B9D50059B342 /* Main.storyboard */; };
 		3F579DD61BE0B9D50059B342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F579DD51BE0B9D50059B342 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3F473D271BE0DC3B00572B19 /* NotesDataSourceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDataSourceTest.swift; sourceTree = "<group>"; };
+		3F473D291BE0E16400572B19 /* ShowsNotesDetailsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowsNotesDetailsTest.swift; sourceTree = "<group>"; };
 		3F579DCB1BE0B9D50059B342 /* SimpleNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F579DCE1BE0B9D50059B342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F579DD31BE0B9D50059B342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		3F579DED1BE0B9D50059B342 /* SimpleNotesUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3F473D291BE0E16400572B19 /* ShowsNotesDetailsTest.swift */,
 				3F579DF01BE0B9D50059B342 /* Info.plist */,
 			);
 			path = SimpleNotesUITests;
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F473D2A1BE0E16400572B19 /* ShowsNotesDetailsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,10 +532,12 @@
 		3F579DFA1BE0B9D50059B342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleNotesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokacoding.SimpleNotesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = SimpleNotes;
 				USES_XCTRUNNER = YES;
 			};
@@ -540,6 +546,7 @@
 		3F579DFB1BE0B9D50059B342 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SimpleNotesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mokacoding.SimpleNotesUITests;
