@@ -1,7 +1,8 @@
 language: objective-c
 osx_image: xcode7.1
-cache:
-  bundler: true
+
+cache: bundler
+
 script:
   - ./unit-test
   - ./ui-test
